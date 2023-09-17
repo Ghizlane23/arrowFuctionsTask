@@ -12,13 +12,19 @@ const sum = (a, b) => a + b;
 console.log(sum(5, 6));
 // Q3) Write a simple arrow function that squares a number.
 const sqr = (num) => num * num;
-console.log(sqr(2));
+console.log(sqr(20));
 // Q4) [🌶️🌶️] Create an arrow function that takes an array of numbers and returns a new array with each number squared.
 const newArr = (arr) => {
-  const arr2 = arr.map((x) => {
-    return x * x;
-  });
-  return arr2;
+  //   const arr2 = arr.map((x) => {
+  //     return x * x;
+  //   });
+  //   return arr2;
+
+  const arr1 = [];
+  for (counter = 0; counter < arr.length; counter++) {
+    arr1.push(sqr(arr[counter]));
+  }
+  return arr1;
 };
 a = [2, 6, 8, 9];
 console.log(newArr(a));
