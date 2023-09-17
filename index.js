@@ -20,5 +20,5 @@ const newArr = (arr) => {
   });
   return arr2;
 };
-a = [2, 3, 5];
+a = [2, 6, 8, 9];
 console.log(newArr(a));
